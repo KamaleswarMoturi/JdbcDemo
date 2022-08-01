@@ -17,6 +17,10 @@ public class Start {
 				
 			}else if(choice==2)
 			{
+				System.out.println("enter student id who you want to delete");
+				int userId=Integer.parseInt(br.readLine());
+				boolean f=StudentDao.deleteStudent(userId);
+				System.out.println("deleted succcesfully  "+f);
 			}else if(choice==3)
 			{
 				
