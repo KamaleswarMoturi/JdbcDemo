@@ -14,6 +14,17 @@ public class Start {
 			int choice=Integer.parseInt(br.readLine());
 			if(choice==1)
 			{
+				System.out.println("Enter student name : ");
+				String name=br.readLine();
+				System.out.println("Enter student phone : ");
+				String   phone=br.readLine();
+				System.out.println("Enter student city : ");
+				String city=br.readLine();
+				Student st=new Student(name, phone, city);
+				boolean ans=StudentDao.insertStudentToDB(st);
+				System.out.println(st);
+				System.out.println(ans +" query performed");
+			
 				
 			}else if(choice==2)
 			{
