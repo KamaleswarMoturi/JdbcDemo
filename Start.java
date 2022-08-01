@@ -19,7 +19,7 @@ public class Start {
 			{
 			}else if(choice==3)
 			{
-				
+				StudentDao.showAllStudents();
 			}else if(choice==4)
 			{
 				break;
