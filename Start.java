@@ -34,7 +34,7 @@ public class Start {
 				System.out.println("deleted succcesfully  "+f);
 			}else if(choice==3)
 			{
-				
+				StudentDao.showAllStudents();
 			}else if(choice==4)
 			{
 				break;
